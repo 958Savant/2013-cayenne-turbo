@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2013 Porsche Cayenne Turbo</title>
+<meta name="description" content="2013 Porsche Cayenne Turbo for sale in Aiken, South Carolina. Jet Black Metallic over Espresso and Cognac leather, 81,751 miles, asking $27,000.">
+<meta name="theme-color" content="#0f0d0b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2013 Porsche Cayenne Turbo &middot; $27,000">
+<meta property="og:description" content="Jet Black Metallic over Espresso and Cognac, 81,751 miles, Aiken, SC. Photos, videos, build sheet and Carfax history.">
+<meta property="og:image" content="f/010.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout: full-bleed hero photo fading into an espresso-black page, one 1180px column,
+     and the build sheet as the single light "paper" block. Single dark theme by choice:
+     the palette is the car (black paint, cognac leather, red calipers). */
+  --ink:#0f0d0b;
+  --panel:#191613;
+  --line:#352e27;
+  --text:#efe9df;
+  --muted:#a99f91;
+  --cognac:#d1904f;
+  --paper:#ece4d6;
+  --paper-ink:#1c1814;
+  --flag:#e2594c;
+  --ok:#93bb99;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --gut:clamp(16px,4vw,40px);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--text);font-family:var(--body);font-size:1.125rem;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+p{margin:0 0 1em}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--cognac);outline-offset:3px}
+.wrap{width:min(1180px,calc(100% - 2*var(--gut)));margin-inline:auto}
+.mono{font-family:var(--mono)}
+.tag{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:20;background:rgba(15,13,11,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:22px;min-height:56px}
+.top-name{font-family:var(--display);font-stretch:125%;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:.8rem;text-decoration:none;white-space:nowrap}
+.top nav{display:flex;gap:20px;margin-left:auto}
+.top nav a{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--text)}
+.top-cta{font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;white-space:nowrap;background:var(--cognac);color:#17110a;padding:9px 14px;font-weight:500}
+.top-cta:hover{background:#e0a467}
+
+/* hero */
+.hero-photo{display:block;position:relative;width:100%;aspect-ratio:21/9;max-height:74vh;overflow:hidden;background:#000}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 58%;animation:settle 1.4s cubic-bezier(.2,.7,.2,1) both}
+@keyframes settle{from{transform:scale(1.045)}to{transform:scale(1)}}
+.hero-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(15,13,11,0) 50%,rgba(15,13,11,.7) 80%,var(--ink) 100%)}
+.hero-body{position:relative;margin-top:clamp(-140px,-10vw,-48px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(24px,5vw,72px);align-items:end;padding-bottom:clamp(32px,5vw,60px)}
+.eyebrow{font-family:var(--mono);font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cognac);margin:0 0 18px}
+h1{font-family:var(--display);font-stretch:125%;font-weight:800;text-transform:uppercase;line-height:.9;letter-spacing:-.02em;font-size:clamp(2.35rem,8vw,6.4rem);margin:0;text-wrap:balance}
+h1 small{display:block;font-size:.21em;font-weight:600;letter-spacing:.16em;margin-bottom:1em;line-height:1;color:var(--text)}
+.lede{font-size:clamp(1.12rem,1.7vw,1.35rem);line-height:1.45;max-width:36em;margin:22px 0 0;color:#ddd5c8}
+.ask{border:1px solid var(--line);background:var(--panel);padding:22px 24px 20px;min-width:290px}
+.ask-price{font-family:var(--display);font-stretch:125%;font-weight:800;font-size:clamp(2.3rem,4vw,3.1rem);line-height:1;margin:8px 0 6px;font-variant-numeric:tabular-nums}
+.ask-note{font-size:.95rem;color:var(--muted);margin:0 0 18px}
+.btn{display:block;text-align:center;text-decoration:none;background:var(--cognac);color:#17110a;font-family:var(--display);font-stretch:112%;font-weight:700;font-size:1rem;padding:14px 18px;letter-spacing:.01em}
+.btn:hover{background:#e0a467}
+.phone-line{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:14px 0 0;font-family:var(--mono);font-size:.95rem}
+.copy{background:none;border:1px solid var(--line);padding:5px 10px;font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);cursor:pointer}
+.copy:hover{color:var(--text);border-color:var(--muted)}
+
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.facts div{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 20px 20px}
+.facts dt{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:8px 0 0;font-family:var(--display);font-stretch:112%;font-weight:600;font-size:1.1rem;line-height:1.25}
+.facts dd small{display:block;font-family:var(--body);font-weight:400;font-size:.92rem;color:var(--muted);margin-top:3px;font-stretch:100%}
+
+/* sections */
+section{padding-block:clamp(48px,7vw,92px)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:clamp(22px,3vw,36px)}
+h2{font-family:var(--display);font-stretch:125%;font-weight:700;text-transform:uppercase;font-size:clamp(1.5rem,3.2vw,2.5rem);line-height:1;letter-spacing:-.01em;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-stretch:112%;font-weight:700;font-size:1.12rem;line-height:1.2;margin:0 0 .5em;text-wrap:balance}
+.prose{max-width:38em}
+.prose p{margin-bottom:1.05em}
+.prose a,.inline-link{color:var(--cognac);text-underline-offset:3px}
+
+/* sticker math */
+.math{padding-top:clamp(40px,6vw,72px);padding-bottom:0}
+.bars{display:grid;gap:14px}
+.bar-row{display:grid;grid-template-columns:11.5em minmax(0,1fr);gap:8px 20px;align-items:center}
+.bar-label{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.bar-track{display:flex;align-items:center;gap:14px;min-width:0}
+.bar{height:34px;background:var(--line);flex:0 0 auto;width:calc(var(--w) * .78)}
+.bar-row.now .bar{background:var(--cognac)}
+.bar-val{font-family:var(--display);font-stretch:112%;font-weight:700;font-size:1.25rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.math-note{margin:20px 0 0;color:var(--muted);max-width:40em}
+
+.hero-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin:20px 0 0}
+.hero-links a{font-family:var(--mono);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--cognac);text-underline-offset:4px}
+
+/* videos */
+.vid-main{position:relative;display:block;aspect-ratio:16/9;background:#000;overflow:hidden;color:var(--text);text-decoration:none}
+.facade{display:block;width:100%;height:100%;border:0;padding:0;margin:0;background:none;cursor:pointer;color:inherit}
+.vid-main img{width:100%;height:100%;object-fit:cover;opacity:.88;transition:opacity .3s ease}
+.vid-main:hover img{opacity:1}
+.vid-main iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.play{position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:var(--cognac);box-shadow:0 8px 30px rgba(0,0,0,.5)}
+.play::after{content:"";position:absolute;left:33px;top:26px;border-style:solid;border-width:16px 0 16px 26px;border-color:transparent transparent transparent #17110a}
+.vid-note{position:absolute;left:16px;bottom:14px;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;background:rgba(10,8,6,.8);padding:6px 10px}
+.vid-meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin:14px 0 0}
+.vid-meta h3{margin:0;font-size:1.3rem}
+.vid-meta p{flex-basis:100%;margin:2px 0 0;color:#ddd5c8;font-size:1.02rem}
+.vid-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 14px;margin-top:26px}
+.vcard{display:flex;flex-direction:column;gap:9px;text-align:left;background:none;border:0;padding:0;margin:0;cursor:pointer;color:var(--text);text-decoration:none;font:inherit}
+.vthumb{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:var(--panel);outline:2px solid transparent;outline-offset:3px}
+.vthumb img{width:100%;height:100%;object-fit:cover}
+.vcard.on .vthumb{outline-color:var(--cognac)}
+.vlen{position:absolute;right:6px;bottom:6px;background:rgba(10,8,6,.85);font-family:var(--mono);font-size:.72rem;padding:2px 7px}
+.vtitle{font-family:var(--display);font-stretch:112%;font-weight:600;font-size:1rem;line-height:1.25}
+.vcard:hover .vtitle,.vcard.on .vtitle{color:var(--cognac)}
+.report-link{margin:18px 0 0}
+
+/* overview */
+.overview{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,72px);align-items:start}
+.points{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.points li{padding:14px 0;border-bottom:1px solid var(--line);font-size:1.02rem;line-height:1.4}
+.points b{display:block;font-family:var(--mono);font-weight:500;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cognac);margin-bottom:4px}
+
+/* photos */
+.mosaic,.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.mosaic a,.grid a{display:block;aspect-ratio:3/2;overflow:hidden;background:var(--panel)}
+.mosaic a:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto;position:relative}
+.mosaic a:first-child img{position:absolute;inset:0}
+.mosaic img,.grid img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.mosaic a:hover img,.grid a:hover img{transform:scale(1.035)}
+.cat{margin-top:clamp(32px,4.5vw,56px)}
+.cat-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:12px}
+.cat-head h3{margin:0}
+.grid a:nth-child(n+9){display:none}
+.grid.open a:nth-child(n+9){display:block}
+.showall{margin-top:12px;width:100%;background:none;border:1px solid var(--line);padding:13px 16px;font-family:var(--mono);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:var(--text)}
+.showall:hover{border-color:var(--cognac);color:var(--cognac)}
+
+/* build sheet */
+.sheet{background:var(--paper);color:var(--paper-ink);padding:clamp(22px,4.2vw,52px)}
+.sheet-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:10px 28px;border-bottom:2px solid var(--paper-ink);padding-bottom:16px;margin-bottom:8px}
+.sheet-title{font-family:var(--display);font-stretch:125%;font-weight:800;text-transform:uppercase;font-size:clamp(1.5rem,3.2vw,2.5rem);line-height:1;letter-spacing:-.01em;margin:0}
+.sheet-vin{font-family:var(--mono);font-size:clamp(.82rem,1.6vw,1rem);letter-spacing:.06em;margin:0;overflow-wrap:anywhere}
+.sheet-cols{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,4vw,56px);margin-top:22px}
+.sheet h3{font-family:var(--mono);font-weight:500;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 4px;color:#5d5246}
+.sheet table{width:100%;border-collapse:collapse;font-size:1rem;line-height:1.35}
+.sheet th,.sheet td{text-align:left;vertical-align:top;padding:9px 0;border-bottom:1px solid rgba(28,24,20,.2);font-weight:400}
+.sheet th{font-family:var(--mono);font-size:.8rem;letter-spacing:.02em;white-space:nowrap;padding-right:18px;color:#4a4036;padding-top:11px}
+.sheet .code{width:4.2em}
+.sheet .see{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#7a4517;white-space:nowrap;margin-left:8px;text-underline-offset:3px}
+.sheet-foot{margin:22px 0 0;font-size:.9rem;color:#5d5246;max-width:52em}
+
+/* history */
+.report{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.report div{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 20px 18px}
+.report .k{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.report .v{margin:0;font-family:var(--display);font-stretch:112%;font-weight:600;font-size:1.06rem;display:flex;align-items:center;gap:10px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--ok);flex:none}
+.dot.flag{background:var(--flag)}
+.dot.plain{background:var(--muted)}
+.two{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,72px);margin-top:clamp(32px,5vw,56px);align-items:start}
+.callout{border-left:3px solid var(--flag);padding:2px 0 2px 22px}
+.callout.calm{border-left-color:var(--cognac)}
+.callout + .callout{margin-top:30px}
+.strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:16px}
+.strip a{display:block;aspect-ratio:3/2;overflow:hidden;background:var(--panel)}
+.strip img{width:100%;height:100%;object-fit:cover}
+.path{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.path li{display:grid;grid-template-columns:7.2em minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.path .when{font-family:var(--mono);font-size:.8rem;color:var(--cognac);padding-top:3px}
+.path b{font-family:var(--display);font-stretch:112%;font-weight:600;display:block}
+.path span{color:var(--muted);font-size:.98rem;line-height:1.4;display:block;margin-top:2px}
+
+/* service */
+.svc{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.svc li{display:grid;grid-template-columns:15em minmax(0,1fr);gap:8px 28px;padding:18px 0;border-bottom:1px solid var(--line)}
+.svc .meta{font-family:var(--mono);font-size:.8rem;line-height:1.55;color:var(--muted)}
+.svc .meta b{display:block;color:var(--cognac);font-weight:500}
+.svc p{margin:0;font-size:1.1rem;line-height:1.45}
+details.full{margin-top:26px;border:1px solid var(--line)}
+details.full summary{cursor:pointer;padding:15px 18px;font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+details.full summary:hover{color:var(--cognac)}
+.tablewrap{overflow-x:auto;border-top:1px solid var(--line)}
+.log{border-collapse:collapse;width:100%;min-width:680px;font-size:.95rem;line-height:1.4}
+.log th,.log td{text-align:left;vertical-align:top;padding:9px 14px;border-bottom:1px solid var(--line)}
+.log th{font-family:var(--mono);font-weight:500;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.log td:first-child,.log td:nth-child(2){font-family:var(--mono);font-size:.8rem;white-space:nowrap;font-variant-numeric:tabular-nums}
+.log td:nth-child(2){text-align:right}
+.log th:nth-child(2){text-align:right}
+.log tr.flagrow td{color:#f0a299}
+.log tr:last-child td{border-bottom:0}
+
+/* flaws */
+.flaws{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2.4vw,28px)}
+.flaws figure{margin:0}
+.flaws a{display:block;aspect-ratio:3/2;overflow:hidden;background:var(--panel)}
+.flaws img{width:100%;height:100%;object-fit:cover}
+.flaws figcaption{margin-top:10px;font-size:1rem;line-height:1.4;color:#ddd5c8}
+.notes{margin:clamp(24px,3.5vw,40px) 0 0;padding:0;list-style:none;columns:2;column-gap:clamp(28px,5vw,72px)}
+.notes li{break-inside:avoid;padding:12px 0;border-top:1px solid var(--line);font-size:1.02rem;line-height:1.4}
+
+/* earlier listing + contact */
+.earlier{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 40px;align-items:center;border:1px solid var(--line);background:var(--panel);padding:clamp(20px,3.5vw,36px)}
+.earlier p{margin:8px 0 0;color:#ddd5c8;max-width:40em}
+.ghost{display:inline-block;text-decoration:none;border:1px solid var(--cognac);color:var(--cognac);padding:13px 18px;font-family:var(--mono);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.ghost:hover{background:var(--cognac);color:#17110a}
+.contact{border-top:1px solid var(--line)}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(24px,5vw,72px);align-items:end}
+.bignum{font-family:var(--display);font-stretch:125%;font-weight:800;font-size:clamp(2rem,6.4vw,4.8rem);line-height:1;letter-spacing:-.02em;margin:10px 0 0;font-variant-numeric:tabular-nums;text-decoration:none;display:inline-block}
+.bignum:hover{color:var(--cognac)}
+.contact .lede{margin-top:18px}
+.contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.contact-actions .btn{display:inline-block;padding-inline:26px}
+.contact-actions .copy{padding:0 18px;font-size:.76rem}
+footer{border-top:1px solid var(--line);padding-block:28px 48px;color:var(--muted);font-size:.9rem;line-height:1.5}
+footer p{max-width:60em;margin:0}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(8,7,6,.96);display:grid;grid-template-rows:auto minmax(0,1fr) auto;grid-template-columns:auto minmax(0,1fr) auto}
+.lb[hidden]{display:none}
+.lb-bar{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;font-family:var(--mono);font-size:.76rem;letter-spacing:.06em;color:var(--muted)}
+.lb-x{background:none;border:1px solid var(--line);padding:8px 14px;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:var(--text)}
+.lb-x:hover{border-color:var(--cognac);color:var(--cognac)}
+.lb-stage{grid-column:2;min-height:0;display:flex;align-items:center;justify-content:center}
+.lb-stage img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.lb-nav{background:none;border:0;cursor:pointer;width:clamp(44px,6vw,84px);font-family:var(--display);font-size:2.4rem;line-height:1;color:var(--muted);align-self:stretch}
+.lb-nav:hover{color:var(--cognac)}
+.lb-cap{grid-column:1/-1;padding:14px 16px 18px;text-align:center;font-size:1rem;line-height:1.35;min-height:3.4em}
+.lb-cap b{font-family:var(--mono);font-weight:500;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cognac);margin-right:10px}
+html.lb-open{overflow:hidden}
+
+@media (max-width:860px){
+  .top nav{display:none}
+  .top-cta{margin-left:auto}
+  .hero-photo{aspect-ratio:3/2;max-height:none}
+  .hero-body{grid-template-columns:minmax(0,1fr);margin-top:-36px}
+  .ask{min-width:0}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .overview,.two,.sheet-cols,.contact-grid,.earlier{grid-template-columns:minmax(0,1fr)}
+  .mosaic,.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vid-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .play{width:64px;height:64px;margin:-32px 0 0 -32px}
+  .play::after{left:25px;top:19px;border-width:13px 0 13px 21px}
+  .report{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .svc li{grid-template-columns:minmax(0,1fr)}
+  .bar-row{grid-template-columns:minmax(0,1fr)}
+  .notes{columns:1}
+  .strip{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .strip a:nth-child(n+4){display:none}
+  .mosaic a:first-child{grid-row:auto;aspect-ratio:3/2}
+  .mosaic a:first-child img{position:static}
+  .bar{width:calc(var(--w) * .55)}
+  .lb{grid-template-columns:0 minmax(0,1fr) 0}
+  .lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:76px;background:rgba(8,7,6,.5);color:var(--text);z-index:1}
+  #lb-prev{left:0}
+  #lb-next{right:0}
+}
+@media (max-width:460px){
+  .report{grid-template-columns:minmax(0,1fr)}
+  .flaws{grid-template-columns:minmax(0,1fr)}
+  .path li{grid-template-columns:minmax(0,1fr);gap:2px}
+  .sheet th{white-space:normal}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-photo img{animation:none}
+  .mosaic img,.grid img{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="top-name" href="#top">2013 Cayenne Turbo</a>
+    <nav aria-label="Sections">
+      <a href="#videos">Videos</a>
+      <a href="#photos">Photos</a>
+      <a href="#build">Build sheet</a>
+      <a href="#history">History</a>
+      <a href="#service">Service</a>
+      <a href="#condition">Condition</a>
+    </nav>
+    <a class="top-cta" href="#contact">$27,000 &middot; Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <a class="hero-photo" href="f/010.jpg" data-n="10"><img src="f/010.jpg" width="1800" height="1200" alt="Black 2013 Porsche Cayenne Turbo, front three-quarter view" fetchpriority="high"></a>
+  <div class="wrap hero-body">
+    <div>
+      <p class="eyebrow">For sale in Aiken, South Carolina</p>
+      <h1><small>2013 Porsche</small>Cayenne Turbo</h1>
+      <p class="lede">Jet Black Metallic over two-tone Espresso and Cognac natural leather. A 500 hp twin-turbo V8, 81,751 miles, and 30 service records on its Carfax.</p>
+      <p class="hero-links"><a href="#videos">6 videos</a><a href="#photos">185 photos</a><a href="#build">Build sheet</a><a href="#history">Carfax history</a></p>
+    </div>
+    <aside class="ask" aria-label="Price and contact">
+      <span class="tag">Asking</span>
+      <p class="ask-price">$27,000</p>
+      <p class="ask-note">Original window sticker: $130,185</p>
+      <a class="btn" href="tel:+18282734080">Call or text Will</a>
+      <p class="phone-line"><span>(828) 273-4080</span><button class="copy" type="button" data-copy="828-273-4080">Copy number</button></p>
+    </aside>
+  </div>
+</div>
+
+<div class="wrap">
+  <dl class="facts">
+    <div><dt>Mileage</dt><dd class="num">81,751<small>on the odometer when photographed</small></dd></div>
+    <div><dt>Engine</dt><dd>4.8-liter twin-turbo V8<small>500 hp, 516 lb-ft</small></dd></div>
+    <div><dt>Transmission</dt><dd>8-speed Tiptronic S<small>active all-wheel drive</small></dd></div>
+    <div><dt>Location</dt><dd>Aiken, South Carolina<small>titled in SC</small></dd></div>
+    <div><dt>Exterior</dt><dd>Jet Black Metallic<small>option code 2T</small></dd></div>
+    <div><dt>Interior</dt><dd>Espresso and Cognac<small>two-tone natural leather</small></dd></div>
+    <div><dt>Built</dt><dd>February 2013<small>sold new in St. Louis, Missouri</small></dd></div>
+    <div><dt>VIN</dt><dd class="mono" style="font-size:.92rem;font-weight:500;overflow-wrap:anywhere">WP1AC2A20DLA92737</dd></div>
+  </dl>
+</div>
+
+<section class="math">
+  <div class="wrap">
+    <div class="bars" role="img" aria-label="Original sticker price of $130,185 compared with the $27,000 asking price">
+      <div class="bar-row"><span class="bar-label">Window sticker, 2013</span><span class="bar-track"><span class="bar" style="--w:100%"></span><span class="bar-val">$130,185</span></span></div>
+      <div class="bar-row now"><span class="bar-label">Asking today</span><span class="bar-track"><span class="bar" style="--w:20.74%"></span><span class="bar-val">$27,000</span></span></div>
+    </div>
+    <p class="math-note">The asking price is about a fifth of what this Cayenne Turbo cost new with its options.</p>
+  </div>
+</section>
+
+<section id="overview">
+  <div class="wrap">
+    <div class="sec-head"><h2>The car</h2><span class="tag">Seller's summary</span></div>
+    <div class="overview">
+      <div class="prose">
+        <p>This is the Turbo: the 4.8-liter twin-turbocharged V8 with 500 hp, an 8-speed Tiptronic S and all-wheel drive. Porsche quoted 0 to 60 mph in 4.4 seconds when it was new. It was built in February 2013 and delivered in St. Louis with a $130,185 sticker.</p>
+        <p>The color combination is Jet Black Metallic over the two-tone Espresso and Cognac natural leather interior, with cognac seat belts and the walnut interior package. Options include 21-inch 911 Turbo II wheels, the panorama roof, Burmester surround sound, 14-way memory seats and Premium Package Plus. It also has adaptive cruise control, shown working in the videos.</p>
+        <p>It spent its first twelve years in the St. Louis area, where Carfax shows regular dealer service, most of it at Porsche St. Louis. It sold on Bring a Trailer in 2025, spent about nine months in Texas, and has been in Aiken since August 2026. The seller reports it presents much as it did at that auction and is dry underneath. There are 18 photos of the underside in the gallery so you can judge for yourself.</p>
+        <p>One accident appears on the Carfax, from January 2014. It was repaired, and the windshield has since been replaced. Both are covered under <a href="#history">History</a>, and known flaws are under <a href="#condition">Condition</a>.</p>
+      </div>
+      <ul class="points">
+        <li><b>Cooling system</b>Water pump, thermostat and housing, and serpentine belt replaced at Porsche St. Louis in 2019</li>
+        <li><b>Ignition</b>Spark plugs replaced in 2021</li>
+        <li><b>Battery</b>Replaced June 2025</li>
+        <li><b>Brakes</b>Front pads and rotors replaced October 2025</li>
+        <li><b>Glass</b>New windshield</li>
+        <li><b>Checked on video</b>Transfer case test and timing chain guide inspection, plus scan tool live data in the photos</li>
+        <li><b>Title</b>No title brands on Carfax</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="videos" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><h2>Videos</h2><span class="tag">6 videos &middot; Select a video to play it here.</span></div>
+      <div class="vid-main" id="player"><button type="button" class="facade" data-id="h-a0zziCPCE" aria-label="Play video: Driving"><img src="f/104.jpg" width="1800" height="1200" alt=""><span class="play"></span></button></div>
+      <div class="vid-meta"><h3 id="vid-title">Driving</h3><span class="tag" id="vid-len">4:51</span><a class="inline-link" id="vid-yt" href="https://youtu.be/h-a0zziCPCE">Watch on YouTube</a><p id="vid-desc">Almost five minutes from the driver&#x27;s seat.</p></div>
+      <div class="vid-list">
+        <button type="button" class="vcard on" aria-pressed="true" data-id="h-a0zziCPCE" data-title="Driving" data-len="4:51" data-desc="Almost five minutes from the driver&#x27;s seat."><span class="vthumb"><img src="t/104.jpg" width="520" height="347" loading="lazy" alt=""><span class="vlen">4:51</span></span><span class="vtitle">Driving</span></button>
+        <button type="button" class="vcard" aria-pressed="false" data-id="c8ZHbQCh9G4" data-title="Cold start" data-len="0:42" data-desc="The 4.8-liter twin-turbo V8 starting from cold."><span class="vthumb"><img src="t/064.jpg" width="520" height="347" loading="lazy" alt=""><span class="vlen">0:42</span></span><span class="vtitle">Cold start</span></button>
+        <button type="button" class="vcard" aria-pressed="false" data-id="Ax9AdwG0bnA" data-title="Adaptive cruise control" data-len="2:09" data-desc="Adaptive cruise control on the highway, adjusting speed to the traffic ahead."><span class="vthumb"><img src="t/116.jpg" width="520" height="347" loading="lazy" alt=""><span class="vlen">2:09</span></span><span class="vtitle">Adaptive cruise control</span></button>
+        <button type="button" class="vcard" aria-pressed="false" data-id="_a_B4oi8fQo" data-title="Air suspension, panorama roof and windows" data-len="1:42" data-desc="The air suspension, panorama roof and power windows in operation."><span class="vthumb"><img src="t/089.jpg" width="520" height="347" loading="lazy" alt=""><span class="vlen">1:42</span></span><span class="vtitle">Air suspension, panorama roof and windows</span></button>
+        <button type="button" class="vcard" aria-pressed="false" data-id="mmrBQ4Q58b8" data-title="Transfer case test" data-len="2:02" data-desc="A test of the transfer case."><span class="vthumb"><img src="t/217.jpg" width="520" height="347" loading="lazy" alt=""><span class="vlen">2:02</span></span><span class="vtitle">Transfer case test</span></button>
+        <button type="button" class="vcard" aria-pressed="false" data-id="E60zC-3UCnY" data-title="Timing guide inspection" data-len="0:40" data-desc="An inspection of the timing chain guides."><span class="vthumb"><img src="t/066.jpg" width="520" height="347" loading="lazy" alt=""><span class="vlen">0:40</span></span><span class="vtitle">Timing guide inspection</span></button>
+      </div>
+  </div>
+</section>
+
+<section id="photos" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><h2>Photos</h2><span class="tag">185 photos &middot; select any to enlarge</span></div>
+    <div class="mosaic">
+      <a href="f/109.jpg" data-n="109"><img src="t/109.jpg" width="520" height="347" loading="lazy" alt="Front three-quarter"></a>
+      <a href="f/014.jpg" data-n="14"><img src="t/014.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+      <a href="f/100.jpg" data-n="100"><img src="t/100.jpg" width="520" height="347" loading="lazy" alt="Profile"></a>
+      <a href="f/090.jpg" data-n="90"><img src="t/090.jpg" width="520" height="347" loading="lazy" alt="Dashboard and center console"></a>
+      <a href="f/151.jpg" data-n="151"><img src="t/151.jpg" width="520" height="347" loading="lazy" alt="Front seats"></a>
+      <a href="f/064.jpg" data-n="64"><img src="t/064.jpg" width="520" height="347" loading="lazy" alt="4.8-liter twin-turbo V8"></a>
+      <a href="f/219.jpg" data-n="219"><img src="t/219.jpg" width="520" height="347" loading="lazy" alt="Rear differential"></a>
+      <a href="f/035.jpg" data-n="35"><img src="t/035.jpg" width="520" height="347" loading="lazy" alt="21-inch 911 Turbo II wheel (option CZ4) and red caliper"></a>
+      <a href="f/089.jpg" data-n="89"><img src="t/089.jpg" width="520" height="347" loading="lazy" alt="Front cabin under the panorama roof (option 3FU)"></a>
+    </div>
+    <div class="cat">
+      <div class="cat-head"><h3>Exterior</h3><span class="tag">48 photos</span></div>
+      <div class="grid" id="grid-ext">
+        <a href="f/010.jpg" data-n="10"><img src="t/010.jpg" width="520" height="347" loading="lazy" alt="Front three-quarter"></a>
+        <a href="f/009.jpg" data-n="9"><img src="t/009.jpg" width="520" height="347" loading="lazy" alt="Front three-quarter"></a>
+        <a href="f/109.jpg" data-n="109"><img src="t/109.jpg" width="520" height="347" loading="lazy" alt="Front three-quarter"></a>
+        <a href="f/108.jpg" data-n="108"><img src="t/108.jpg" width="520" height="347" loading="lazy" alt="Front three-quarter"></a>
+        <a href="f/005.jpg" data-n="5"><img src="t/005.jpg" width="520" height="347" loading="lazy" alt="Front three-quarter"></a>
+        <a href="f/004.jpg" data-n="4"><img src="t/004.jpg" width="520" height="347" loading="lazy" alt="Front three-quarter"></a>
+        <a href="f/003.jpg" data-n="3"><img src="t/003.jpg" width="520" height="347" loading="lazy" alt="Front three-quarter"></a>
+        <a href="f/008.jpg" data-n="8"><img src="t/008.jpg" width="520" height="347" loading="lazy" alt="Front three-quarter"></a>
+        <a href="f/006.jpg" data-n="6"><img src="t/006.jpg" width="520" height="347" loading="lazy" alt="Front"></a>
+        <a href="f/007.jpg" data-n="7"><img src="t/007.jpg" width="520" height="347" loading="lazy" alt="Front"></a>
+        <a href="f/110.jpg" data-n="110"><img src="t/110.jpg" width="520" height="347" loading="lazy" alt="Front"></a>
+        <a href="f/113.jpg" data-n="113"><img src="t/113.jpg" width="520" height="347" loading="lazy" alt="Front"></a>
+        <a href="f/117.jpg" data-n="117"><img src="t/117.jpg" width="520" height="347" loading="lazy" alt="Front, low angle"></a>
+        <a href="f/114.jpg" data-n="114"><img src="t/114.jpg" width="520" height="347" loading="lazy" alt="Front three-quarter from above"></a>
+        <a href="f/111.jpg" data-n="111"><img src="t/111.jpg" width="520" height="347" loading="lazy" alt="Front three-quarter from above"></a>
+        <a href="f/112.jpg" data-n="112"><img src="t/112.jpg" width="520" height="347" loading="lazy" alt="Front three-quarter from above"></a>
+        <a href="f/001.jpg" data-n="1"><img src="t/001.jpg" width="520" height="347" loading="lazy" alt="Profile"></a>
+        <a href="f/002.jpg" data-n="2"><img src="t/002.jpg" width="520" height="347" loading="lazy" alt="Profile"></a>
+        <a href="f/021.jpg" data-n="21"><img src="t/021.jpg" width="520" height="347" loading="lazy" alt="Profile"></a>
+        <a href="f/022.jpg" data-n="22"><img src="t/022.jpg" width="520" height="347" loading="lazy" alt="Profile"></a>
+        <a href="f/100.jpg" data-n="100"><img src="t/100.jpg" width="520" height="347" loading="lazy" alt="Profile"></a>
+        <a href="f/104.jpg" data-n="104"><img src="t/104.jpg" width="520" height="347" loading="lazy" alt="Profile"></a>
+        <a href="f/107.jpg" data-n="107"><img src="t/107.jpg" width="520" height="347" loading="lazy" alt="Profile"></a>
+        <a href="f/011.jpg" data-n="11"><img src="t/011.jpg" width="520" height="347" loading="lazy" alt="Profile"></a>
+        <a href="f/012.jpg" data-n="12"><img src="t/012.jpg" width="520" height="347" loading="lazy" alt="Profile"></a>
+        <a href="f/014.jpg" data-n="14"><img src="t/014.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+        <a href="f/013.jpg" data-n="13"><img src="t/013.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+        <a href="f/018.jpg" data-n="18"><img src="t/018.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+        <a href="f/019.jpg" data-n="19"><img src="t/019.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+        <a href="f/020.jpg" data-n="20"><img src="t/020.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+        <a href="f/102.jpg" data-n="102"><img src="t/102.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+        <a href="f/103.jpg" data-n="103"><img src="t/103.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+        <a href="f/101.jpg" data-n="101"><img src="t/101.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+        <a href="f/106.jpg" data-n="106"><img src="t/106.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+        <a href="f/120.jpg" data-n="120"><img src="t/120.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+        <a href="f/121.jpg" data-n="121"><img src="t/121.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+        <a href="f/015.jpg" data-n="15"><img src="t/015.jpg" width="520" height="347" loading="lazy" alt="Rear"></a>
+        <a href="f/016.jpg" data-n="16"><img src="t/016.jpg" width="520" height="347" loading="lazy" alt="Rear"></a>
+        <a href="f/017.jpg" data-n="17"><img src="t/017.jpg" width="520" height="347" loading="lazy" alt="Rear"></a>
+        <a href="f/105.jpg" data-n="105"><img src="t/105.jpg" width="520" height="347" loading="lazy" alt="Rear"></a>
+        <a href="f/122.jpg" data-n="122"><img src="t/122.jpg" width="520" height="347" loading="lazy" alt="Rear"></a>
+        <a href="f/057.jpg" data-n="57"><img src="t/057.jpg" width="520" height="347" loading="lazy" alt="Doors, hood and liftgate open"></a>
+        <a href="f/058.jpg" data-n="58"><img src="t/058.jpg" width="520" height="347" loading="lazy" alt="Doors, hood and liftgate open"></a>
+        <a href="f/059.jpg" data-n="59"><img src="t/059.jpg" width="520" height="347" loading="lazy" alt="Doors, hood and liftgate open"></a>
+        <a href="f/060.jpg" data-n="60"><img src="t/060.jpg" width="520" height="347" loading="lazy" alt="Doors, hood and liftgate open"></a>
+        <a href="f/061.jpg" data-n="61"><img src="t/061.jpg" width="520" height="347" loading="lazy" alt="Doors, hood and liftgate open"></a>
+        <a href="f/069.jpg" data-n="69"><img src="t/069.jpg" width="520" height="347" loading="lazy" alt="Doors and liftgate open"></a>
+        <a href="f/070.jpg" data-n="70"><img src="t/070.jpg" width="520" height="347" loading="lazy" alt="Doors and liftgate open"></a>
+      </div>
+      <button class="showall" type="button" aria-expanded="false" aria-controls="grid-ext" data-more="Show all 48 exterior photos" data-less="Show fewer">Show all 48 exterior photos</button>
+    </div>
+    <div class="cat">
+      <div class="cat-head"><h3>Exterior details</h3><span class="tag">32 photos</span></div>
+      <div class="grid" id="grid-det">
+        <a href="f/023.jpg" data-n="23"><img src="t/023.jpg" width="520" height="347" loading="lazy" alt="Front wheel and fender"></a>
+        <a href="f/024.jpg" data-n="24"><img src="t/024.jpg" width="520" height="347" loading="lazy" alt="Front wheel and fender"></a>
+        <a href="f/031.jpg" data-n="31"><img src="t/031.jpg" width="520" height="347" loading="lazy" alt="Front fender and door"></a>
+        <a href="f/032.jpg" data-n="32"><img src="t/032.jpg" width="520" height="347" loading="lazy" alt="Front corner and headlight"></a>
+        <a href="f/033.jpg" data-n="33"><img src="t/033.jpg" width="520" height="347" loading="lazy" alt="Front corner and headlight"></a>
+        <a href="f/043.jpg" data-n="43"><img src="t/043.jpg" width="520" height="347" loading="lazy" alt="Headlight"></a>
+        <a href="f/044.jpg" data-n="44"><img src="t/044.jpg" width="520" height="347" loading="lazy" alt="Headlight"></a>
+        <a href="f/115.jpg" data-n="115"><img src="t/115.jpg" width="520" height="347" loading="lazy" alt="Front grille and intakes"></a>
+        <a href="f/116.jpg" data-n="116"><img src="t/116.jpg" width="520" height="347" loading="lazy" alt="Adaptive cruise control radar in the center of the grille"></a>
+        <a href="f/034.jpg" data-n="34"><img src="t/034.jpg" width="520" height="347" loading="lazy" alt="Hood crest"></a>
+        <a href="f/118.jpg" data-n="118"><img src="t/118.jpg" width="520" height="347" loading="lazy" alt="Hood crest"></a>
+        <a href="f/119.jpg" data-n="119"><img src="t/119.jpg" width="520" height="347" loading="lazy" alt="Hood crest"></a>
+        <a href="f/025.jpg" data-n="25"><img src="t/025.jpg" width="520" height="347" loading="lazy" alt="Rear quarter and wheel"></a>
+        <a href="f/026.jpg" data-n="26"><img src="t/026.jpg" width="520" height="347" loading="lazy" alt="Rear quarter and wheel"></a>
+        <a href="f/030.jpg" data-n="30"><img src="t/030.jpg" width="520" height="347" loading="lazy" alt="Rear quarter and wheel"></a>
+        <a href="f/029.jpg" data-n="29"><img src="t/029.jpg" width="520" height="347" loading="lazy" alt="Rear quarter"></a>
+        <a href="f/027.jpg" data-n="27"><img src="t/027.jpg" width="520" height="347" loading="lazy" alt="Rear corner"></a>
+        <a href="f/028.jpg" data-n="28"><img src="t/028.jpg" width="520" height="347" loading="lazy" alt="Rear, close"></a>
+        <a href="f/037.jpg" data-n="37"><img src="t/037.jpg" width="520" height="347" loading="lazy" alt="Roof spoiler"></a>
+        <a href="f/125.jpg" data-n="125"><img src="t/125.jpg" width="520" height="347" loading="lazy" alt="Rear wiper and spoiler"></a>
+        <a href="f/123.jpg" data-n="123"><img src="t/123.jpg" width="520" height="347" loading="lazy" alt="Taillight"></a>
+        <a href="f/124.jpg" data-n="124"><img src="t/124.jpg" width="520" height="347" loading="lazy" alt="Taillight"></a>
+        <a href="f/054.jpg" data-n="54"><img src="t/054.jpg" width="520" height="347" loading="lazy" alt="Liftgate lettering"></a>
+        <a href="f/162.jpg" data-n="162"><img src="t/162.jpg" width="520" height="347" loading="lazy" alt="Liftgate lettering"></a>
+        <a href="f/055.jpg" data-n="55"><img src="t/055.jpg" width="520" height="347" loading="lazy" alt="Dual twin-tube tailpipes (option 0P3)"></a>
+        <a href="f/056.jpg" data-n="56"><img src="t/056.jpg" width="520" height="347" loading="lazy" alt="Dual twin-tube tailpipes (option 0P3)"></a>
+        <a href="f/157.jpg" data-n="157"><img src="t/157.jpg" width="520" height="347" loading="lazy" alt="Door mirror"></a>
+        <a href="f/158.jpg" data-n="158"><img src="t/158.jpg" width="520" height="347" loading="lazy" alt="Door mirror"></a>
+        <a href="f/159.jpg" data-n="159"><img src="t/159.jpg" width="520" height="347" loading="lazy" alt="Door mirror"></a>
+        <a href="f/160.jpg" data-n="160"><img src="t/160.jpg" width="520" height="347" loading="lazy" alt="Door mirror"></a>
+        <a href="f/087.jpg" data-n="87"><img src="t/087.jpg" width="520" height="347" loading="lazy" alt="Reflection down the side panels"></a>
+        <a href="f/161.jpg" data-n="161"><img src="t/161.jpg" width="520" height="347" loading="lazy" alt="Reflection across the rear quarter and fuel door"></a>
+      </div>
+      <button class="showall" type="button" aria-expanded="false" aria-controls="grid-det" data-more="Show all 32 exterior detail photos" data-less="Show fewer">Show all 32 exterior detail photos</button>
+    </div>
+    <div class="cat">
+      <div class="cat-head"><h3>Wheels, tires and brakes</h3><span class="tag">16 photos</span></div>
+      <div class="grid" id="grid-whl">
+        <a href="f/035.jpg" data-n="35"><img src="t/035.jpg" width="520" height="347" loading="lazy" alt="21-inch 911 Turbo II wheel (option CZ4) and red caliper"></a>
+        <a href="f/036.jpg" data-n="36"><img src="t/036.jpg" width="520" height="347" loading="lazy" alt="21-inch 911 Turbo II wheel (option CZ4) and red caliper"></a>
+        <a href="f/039.jpg" data-n="39"><img src="t/039.jpg" width="520" height="347" loading="lazy" alt="21-inch 911 Turbo II wheel (option CZ4) and red caliper"></a>
+        <a href="f/047.jpg" data-n="47"><img src="t/047.jpg" width="520" height="347" loading="lazy" alt="21-inch 911 Turbo II wheel (option CZ4) and red caliper"></a>
+        <a href="f/050.jpg" data-n="50"><img src="t/050.jpg" width="520" height="347" loading="lazy" alt="21-inch 911 Turbo II wheel (option CZ4) and red caliper"></a>
+        <a href="f/045.jpg" data-n="45"><img src="t/045.jpg" width="520" height="347" loading="lazy" alt="Brake pad thickness check"></a>
+        <a href="f/049.jpg" data-n="49"><img src="t/049.jpg" width="520" height="347" loading="lazy" alt="Brake pad thickness check"></a>
+        <a href="f/046.jpg" data-n="46"><img src="t/046.jpg" width="520" height="347" loading="lazy" alt="Brake pad gauge"></a>
+        <a href="f/038.jpg" data-n="38"><img src="t/038.jpg" width="520" height="347" loading="lazy" alt="Tread depth gauge on the tire"></a>
+        <a href="f/040.jpg" data-n="40"><img src="t/040.jpg" width="520" height="347" loading="lazy" alt="Tread depth gauge on the tire"></a>
+        <a href="f/048.jpg" data-n="48"><img src="t/048.jpg" width="520" height="347" loading="lazy" alt="Tread depth gauge on the tire"></a>
+        <a href="f/051.jpg" data-n="51"><img src="t/051.jpg" width="520" height="347" loading="lazy" alt="Tread depth gauge on the tire"></a>
+        <a href="f/041.jpg" data-n="41"><img src="t/041.jpg" width="520" height="347" loading="lazy" alt="Tire date code 1019: week 10 of 2019"></a>
+        <a href="f/042.jpg" data-n="42"><img src="t/042.jpg" width="520" height="347" loading="lazy" alt="Tire date code 1419: week 14 of 2019"></a>
+        <a href="f/052.jpg" data-n="52"><img src="t/052.jpg" width="520" height="347" loading="lazy" alt="Tire date code 1319: week 13 of 2019"></a>
+        <a href="f/053.jpg" data-n="53"><img src="t/053.jpg" width="520" height="347" loading="lazy" alt="Tire date code 1019: week 10 of 2019"></a>
+      </div>
+      <button class="showall" type="button" aria-expanded="false" aria-controls="grid-whl" data-more="Show all 16 wheel, tire and brake photos" data-less="Show fewer">Show all 16 wheel, tire and brake photos</button>
+    </div>
+    <div class="cat">
+      <div class="cat-head"><h3>Engine bay and diagnostics</h3><span class="tag">8 photos</span></div>
+      <div class="grid" id="grid-eng">
+        <a href="f/064.jpg" data-n="64"><img src="t/064.jpg" width="520" height="347" loading="lazy" alt="4.8-liter twin-turbo V8"></a>
+        <a href="f/065.jpg" data-n="65"><img src="t/065.jpg" width="520" height="347" loading="lazy" alt="4.8-liter twin-turbo V8"></a>
+        <a href="f/062.jpg" data-n="62"><img src="t/062.jpg" width="520" height="347" loading="lazy" alt="Engine bay"></a>
+        <a href="f/063.jpg" data-n="63"><img src="t/063.jpg" width="520" height="347" loading="lazy" alt="Engine bay"></a>
+        <a href="f/066.jpg" data-n="66"><img src="t/066.jpg" width="520" height="347" loading="lazy" alt="Engine cover"></a>
+        <a href="f/203.jpg" data-n="203"><img src="t/203.jpg" width="520" height="347" loading="lazy" alt="Coolant expansion tank, cap off"></a>
+        <a href="f/201.jpg" data-n="201"><img src="t/201.jpg" width="520" height="347" loading="lazy" alt="Scan tool live data: camshaft deviation, Bank 1 at 0 and Bank 2 at -2.625 degrees crank"></a>
+        <a href="f/202.jpg" data-n="202"><img src="t/202.jpg" width="520" height="347" loading="lazy" alt="Scan tool live data: fuel high-pressure regulation values"></a>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat-head"><h3>Underside</h3><span class="tag">18 photos</span></div>
+      <div class="grid" id="grid-und">
+        <a href="f/209.jpg" data-n="209"><img src="t/209.jpg" width="520" height="347" loading="lazy" alt="Front of the engine and radiator support from below"></a>
+        <a href="f/208.jpg" data-n="208"><img src="t/208.jpg" width="520" height="347" loading="lazy" alt="Front of the engine and subframe from below"></a>
+        <a href="f/207.jpg" data-n="207"><img src="t/207.jpg" width="520" height="347" loading="lazy" alt="Front of the engine from below, under an inspection light"></a>
+        <a href="f/205.jpg" data-n="205"><img src="t/205.jpg" width="520" height="347" loading="lazy" alt="Catalytic converter and engine oil pan"></a>
+        <a href="f/206.jpg" data-n="206"><img src="t/206.jpg" width="520" height="347" loading="lazy" alt="Catalytic converter and heat shields"></a>
+        <a href="f/210.jpg" data-n="210"><img src="t/210.jpg" width="520" height="347" loading="lazy" alt="Transmission oil pan"></a>
+        <a href="f/204.jpg" data-n="204"><img src="t/204.jpg" width="520" height="347" loading="lazy" alt="Steering tie rod and front suspension"></a>
+        <a href="f/215.jpg" data-n="215"><img src="t/215.jpg" width="520" height="347" loading="lazy" alt="Suspension arm and wheel from below"></a>
+        <a href="f/216.jpg" data-n="216"><img src="t/216.jpg" width="520" height="347" loading="lazy" alt="Control arm and red brake caliper"></a>
+        <a href="f/217.jpg" data-n="217"><img src="t/217.jpg" width="520" height="347" loading="lazy" alt="Center of the underbody"></a>
+        <a href="f/218.jpg" data-n="218"><img src="t/218.jpg" width="520" height="347" loading="lazy" alt="Driveshaft and rear differential"></a>
+        <a href="f/219.jpg" data-n="219"><img src="t/219.jpg" width="520" height="347" loading="lazy" alt="Rear differential"></a>
+        <a href="f/220.jpg" data-n="220"><img src="t/220.jpg" width="520" height="347" loading="lazy" alt="Rear differential, close up"></a>
+        <a href="f/221.jpg" data-n="221"><img src="t/221.jpg" width="520" height="347" loading="lazy" alt="Rear differential and crossmember"></a>
+        <a href="f/214.jpg" data-n="214"><img src="t/214.jpg" width="520" height="347" loading="lazy" alt="Rear differential between the exhaust pipes"></a>
+        <a href="f/213.jpg" data-n="213"><img src="t/213.jpg" width="520" height="347" loading="lazy" alt="Suspension arms and wheel from below"></a>
+        <a href="f/211.jpg" data-n="211"><img src="t/211.jpg" width="520" height="347" loading="lazy" alt="Rear muffler and exhaust tips"></a>
+        <a href="f/212.jpg" data-n="212"><img src="t/212.jpg" width="520" height="347" loading="lazy" alt="Rear muffler and exhaust tips"></a>
+      </div>
+      <button class="showall" type="button" aria-expanded="false" aria-controls="grid-und" data-more="Show all 18 underside photos" data-less="Show fewer">Show all 18 underside photos</button>
+    </div>
+    <div class="cat">
+      <div class="cat-head"><h3>Interior</h3><span class="tag">54 photos</span></div>
+      <div class="grid" id="grid-int">
+        <a href="f/089.jpg" data-n="89"><img src="t/089.jpg" width="520" height="347" loading="lazy" alt="Front cabin under the panorama roof (option 3FU)"></a>
+        <a href="f/088.jpg" data-n="88"><img src="t/088.jpg" width="520" height="347" loading="lazy" alt="Front cabin"></a>
+        <a href="f/090.jpg" data-n="90"><img src="t/090.jpg" width="520" height="347" loading="lazy" alt="Dashboard and center console"></a>
+        <a href="f/091.jpg" data-n="91"><img src="t/091.jpg" width="520" height="347" loading="lazy" alt="Dashboard and center console"></a>
+        <a href="f/083.jpg" data-n="83"><img src="t/083.jpg" width="520" height="347" loading="lazy" alt="Driver&#x27;s seat and steering wheel"></a>
+        <a href="f/149.jpg" data-n="149"><img src="t/149.jpg" width="520" height="347" loading="lazy" alt="Steering wheel"></a>
+        <a href="f/150.jpg" data-n="150"><img src="t/150.jpg" width="520" height="347" loading="lazy" alt="Steering wheel"></a>
+        <a href="f/138.jpg" data-n="138"><img src="t/138.jpg" width="520" height="347" loading="lazy" alt="Instrument cluster showing 81,751 miles"></a>
+        <a href="f/139.jpg" data-n="139"><img src="t/139.jpg" width="520" height="347" loading="lazy" alt="Instrument cluster showing 81,751 miles"></a>
+        <a href="f/126.jpg" data-n="126"><img src="t/126.jpg" width="520" height="347" loading="lazy" alt="Dashboard from the passenger side"></a>
+        <a href="f/132.jpg" data-n="132"><img src="t/132.jpg" width="520" height="347" loading="lazy" alt="Gear selector and walnut trim (option PH4)"></a>
+        <a href="f/136.jpg" data-n="136"><img src="t/136.jpg" width="520" height="347" loading="lazy" alt="Gear selector and walnut trim (option PH4)"></a>
+        <a href="f/137.jpg" data-n="137"><img src="t/137.jpg" width="520" height="347" loading="lazy" alt="Gear selector and walnut trim (option PH4)"></a>
+        <a href="f/133.jpg" data-n="133"><img src="t/133.jpg" width="520" height="347" loading="lazy" alt="Leather-covered dashboard"></a>
+        <a href="f/134.jpg" data-n="134"><img src="t/134.jpg" width="520" height="347" loading="lazy" alt="Leather-covered dashboard"></a>
+        <a href="f/135.jpg" data-n="135"><img src="t/135.jpg" width="520" height="347" loading="lazy" alt="Dash-top clock"></a>
+        <a href="f/145.jpg" data-n="145"><img src="t/145.jpg" width="520" height="347" loading="lazy" alt="Leather-covered dashboard"></a>
+        <a href="f/144.jpg" data-n="144"><img src="t/144.jpg" width="520" height="347" loading="lazy" alt="Walnut trim"></a>
+        <a href="f/140.jpg" data-n="140"><img src="t/140.jpg" width="520" height="347" loading="lazy" alt="Overhead console"></a>
+        <a href="f/078.jpg" data-n="78"><img src="t/078.jpg" width="520" height="347" loading="lazy" alt="Front door open"></a>
+        <a href="f/071.jpg" data-n="71"><img src="t/071.jpg" width="520" height="347" loading="lazy" alt="Front door open"></a>
+        <a href="f/076.jpg" data-n="76"><img src="t/076.jpg" width="520" height="347" loading="lazy" alt="Door panel"></a>
+        <a href="f/075.jpg" data-n="75"><img src="t/075.jpg" width="520" height="347" loading="lazy" alt="Door panel"></a>
+        <a href="f/074.jpg" data-n="74"><img src="t/074.jpg" width="520" height="347" loading="lazy" alt="Door panel"></a>
+        <a href="f/080.jpg" data-n="80"><img src="t/080.jpg" width="520" height="347" loading="lazy" alt="Window switches"></a>
+        <a href="f/081.jpg" data-n="81"><img src="t/081.jpg" width="520" height="347" loading="lazy" alt="Burmester speaker grille (option 9VJ)"></a>
+        <a href="f/086.jpg" data-n="86"><img src="t/086.jpg" width="520" height="347" loading="lazy" alt="Burmester speaker grille (option 9VJ)"></a>
+        <a href="f/082.jpg" data-n="82"><img src="t/082.jpg" width="520" height="347" loading="lazy" alt="Door sill plate"></a>
+        <a href="f/084.jpg" data-n="84"><img src="t/084.jpg" width="520" height="347" loading="lazy" alt="Front seat and sill"></a>
+        <a href="f/094.jpg" data-n="94"><img src="t/094.jpg" width="520" height="347" loading="lazy" alt="Front seat and sill"></a>
+        <a href="f/095.jpg" data-n="95"><img src="t/095.jpg" width="520" height="347" loading="lazy" alt="Front seat and sill"></a>
+        <a href="f/127.jpg" data-n="127"><img src="t/127.jpg" width="520" height="347" loading="lazy" alt="Front seat and sill"></a>
+        <a href="f/141.jpg" data-n="141"><img src="t/141.jpg" width="520" height="347" loading="lazy" alt="Power seat controls (option Q2J)"></a>
+        <a href="f/131.jpg" data-n="131"><img src="t/131.jpg" width="520" height="347" loading="lazy" alt="Front seats"></a>
+        <a href="f/130.jpg" data-n="130"><img src="t/130.jpg" width="520" height="347" loading="lazy" alt="Front seats"></a>
+        <a href="f/151.jpg" data-n="151"><img src="t/151.jpg" width="520" height="347" loading="lazy" alt="Front seats"></a>
+        <a href="f/129.jpg" data-n="129"><img src="t/129.jpg" width="520" height="347" loading="lazy" alt="Rear seats"></a>
+        <a href="f/085.jpg" data-n="85"><img src="t/085.jpg" width="520" height="347" loading="lazy" alt="Rear seats"></a>
+        <a href="f/072.jpg" data-n="72"><img src="t/072.jpg" width="520" height="347" loading="lazy" alt="Rear seats"></a>
+        <a href="f/077.jpg" data-n="77"><img src="t/077.jpg" width="520" height="347" loading="lazy" alt="Interior"></a>
+        <a href="f/146.jpg" data-n="146"><img src="t/146.jpg" width="520" height="347" loading="lazy" alt="Rear seats"></a>
+        <a href="f/147.jpg" data-n="147"><img src="t/147.jpg" width="520" height="347" loading="lazy" alt="Rear seats"></a>
+        <a href="f/153.jpg" data-n="153"><img src="t/153.jpg" width="520" height="347" loading="lazy" alt="Rear seats"></a>
+        <a href="f/128.jpg" data-n="128"><img src="t/128.jpg" width="520" height="347" loading="lazy" alt="Rear climate and seat heating controls"></a>
+        <a href="f/154.jpg" data-n="154"><img src="t/154.jpg" width="520" height="347" loading="lazy" alt="Rear climate and seat heating controls"></a>
+        <a href="f/152.jpg" data-n="152"><img src="t/152.jpg" width="520" height="347" loading="lazy" alt="Door panel"></a>
+        <a href="f/142.jpg" data-n="142"><img src="t/142.jpg" width="520" height="347" loading="lazy" alt="Door panel"></a>
+        <a href="f/148.jpg" data-n="148"><img src="t/148.jpg" width="520" height="347" loading="lazy" alt="Door panel"></a>
+        <a href="f/143.jpg" data-n="143"><img src="t/143.jpg" width="520" height="347" loading="lazy" alt="Door handle and trim"></a>
+        <a href="f/092.jpg" data-n="92"><img src="t/092.jpg" width="520" height="347" loading="lazy" alt="Door handle and trim"></a>
+        <a href="f/093.jpg" data-n="93"><img src="t/093.jpg" width="520" height="347" loading="lazy" alt="Door handle and trim"></a>
+        <a href="f/163.jpg" data-n="163"><img src="t/163.jpg" width="520" height="347" loading="lazy" alt="Overhead reading light"></a>
+        <a href="f/164.jpg" data-n="164"><img src="t/164.jpg" width="520" height="347" loading="lazy" alt="Overhead reading light"></a>
+        <a href="f/073.jpg" data-n="73"><img src="t/073.jpg" width="520" height="347" loading="lazy" alt="Cargo area"></a>
+      </div>
+      <button class="showall" type="button" aria-expanded="false" aria-controls="grid-int" data-more="Show all 54 interior photos" data-less="Show fewer">Show all 54 interior photos</button>
+    </div>
+    <div class="cat">
+      <div class="cat-head"><h3>Labels and glass</h3><span class="tag">7 photos</span></div>
+      <div class="grid" id="grid-lbl">
+        <a href="f/079.jpg" data-n="79"><img src="t/079.jpg" width="520" height="347" loading="lazy" alt="Door jamb plate, built 02/13, with a Clear Auto Bra installer sticker"></a>
+        <a href="f/067.jpg" data-n="67"><img src="t/067.jpg" width="520" height="347" loading="lazy" alt="VIN and engine number label under the hood"></a>
+        <a href="f/068.jpg" data-n="68"><img src="t/068.jpg" width="520" height="347" loading="lazy" alt="VIN at the base of the windshield"></a>
+        <a href="f/096.jpg" data-n="96"><img src="t/096.jpg" width="520" height="347" loading="lazy" alt="Replacement windshield stamp: Fuyao, acoustic solar tint"></a>
+        <a href="f/097.jpg" data-n="97"><img src="t/097.jpg" width="520" height="347" loading="lazy" alt="Replacement windshield stamp: Fuyao, acoustic solar tint"></a>
+        <a href="f/098.jpg" data-n="98"><img src="t/098.jpg" width="520" height="347" loading="lazy" alt="Side glass stamp: Saint-Gobain Sekurit"></a>
+        <a href="f/099.jpg" data-n="99"><img src="t/099.jpg" width="520" height="347" loading="lazy" alt="Side glass stamp: Saint-Gobain Sekurit"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="build" style="padding-top:0">
+  <div class="wrap">
+    <div class="sheet">
+      <div class="sheet-head">
+        <p class="sheet-title">Build sheet</p>
+        <p class="sheet-vin">VIN WP1AC2A20DLA92737</p>
+      </div>
+      <div class="sheet-cols">
+        <div>
+          <h3>Vehicle</h3>
+          <table>
+            <tr><th scope="row">Model</th><td>2013 Porsche Cayenne Turbo</td></tr>
+            <tr><th scope="row">Division</th><td>PCNA (Porsche Cars North America)</td></tr>
+            <tr><th scope="row">Commission no.</th><td class="num">813329</td></tr>
+            <tr><th scope="row">Production month</th><td>February 2013</td></tr>
+            <tr><th scope="row">MSRP</th><td class="num">$130,185.00</td></tr>
+            <tr><th scope="row">Exterior</th><td>Jet Black Metallic</td></tr>
+            <tr><th scope="row">Interior</th><td>Two-tone Natural Leather in Espresso/Cognac</td></tr>
+            <tr><th scope="row">Warranty start</th><td>March 30, 2013</td></tr>
+            <tr><th scope="row">Warranty end</th><td>March 30, 2019 (expired)</td></tr>
+          </table>
+        </div>
+        <div>
+          <h3>Factory options</h3>
+          <table>
+            <tr><th scope="row" class="code">BASE</th><td>Cayenne Turbo</td></tr>
+            <tr><th scope="row" class="code">0P3</th><td>Dual Twin-Tube Tailpipes <a class="see" href="f/055.jpg" data-n="55">Photo</a></td></tr>
+            <tr><th scope="row" class="code">1NP</th><td>Wheel Hub Cover with Colored Porsche Crest <a class="see" href="f/045.jpg" data-n="45">Photo</a></td></tr>
+            <tr><th scope="row" class="code">2T</th><td>Jet Black Metallic</td></tr>
+            <tr><th scope="row" class="code">3FU</th><td>Panorama Roof System <a class="see" href="f/089.jpg" data-n="89">Photo</a></td></tr>
+            <tr><th scope="row" class="code">3S5</th><td>Roof Rails in Black</td></tr>
+            <tr><th scope="row" class="code">9VJ</th><td>Burmester&reg; High-End Surround Sound System <a class="see" href="f/081.jpg" data-n="81">Photo</a></td></tr>
+            <tr><th scope="row" class="code">CZ4</th><td>21" 911 Turbo II Wheel with Wheel Arch Extension <a class="see" href="f/035.jpg" data-n="35">Photo</a></td></tr>
+            <tr><th scope="row" class="code">FZ5</th><td>Seat Belts in Cognac <a class="see" href="f/153.jpg" data-n="153">Photo</a></td></tr>
+            <tr><th scope="row" class="code">G1G</th><td>8-speed Tiptronic S including Auto Start Stop Function</td></tr>
+            <tr><th scope="row" class="code">PH4</th><td>Walnut Interior Package including Gear Selector <a class="see" href="f/136.jpg" data-n="136">Photo</a></td></tr>
+            <tr><th scope="row" class="code">PU4</th><td>Premium Package Plus</td></tr>
+            <tr><th scope="row" class="code">Q2J</th><td>14-way Power Seats with Memory Package <a class="see" href="f/141.jpg" data-n="141">Photo</a></td></tr>
+            <tr><th scope="row" class="code">QJ4</th><td>Exterior Package in high-gloss Black</td></tr>
+            <tr><th scope="row" class="code">UN1</th><td>Online Services</td></tr>
+            <tr><th scope="row" class="code">VB</th><td>Two-tone Natural Leather Interior in Espresso/Cognac</td></tr>
+            <tr><th scope="row" class="code">VW5</th><td>Thermally and Noise Insulated Privacy Glass</td></tr>
+          </table>
+        </div>
+      </div>
+      <p class="sheet-foot">Factory build data for this VIN as decoded by VIN Analytics. This is a summary prepared for the listing, not an official Porsche document.</p>
+    </div>
+  </div>
+</section>
+
+<section id="history" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><h2>History</h2><span class="tag">Carfax report dated October 20, 2026</span></div>
+    <div class="report">
+      <div><p class="k">Accidents</p><p class="v"><span class="dot flag"></span>1 reported, January 2014</p></div>
+      <div><p class="k">Structural damage</p><p class="v"><span class="dot"></span>None reported</p></div>
+      <div><p class="k">Airbag deployment</p><p class="v"><span class="dot"></span>None reported</p></div>
+      <div><p class="k">Total loss</p><p class="v"><span class="dot"></span>None reported</p></div>
+      <div><p class="k">Title brands</p><p class="v"><span class="dot"></span>None</p></div>
+      <div><p class="k">Odometer</p><p class="v"><span class="dot"></span>No rollback indicated</p></div>
+      <div><p class="k">Open recalls</p><p class="v"><span class="dot"></span>None reported</p></div>
+      <div><p class="k">Owners</p><p class="v"><span class="dot plain"></span>6</p></div>
+      <div><p class="k">Service records</p><p class="v"><span class="dot plain"></span>30</p></div>
+    </div>
+    <p class="report-link"><a class="ghost" href="carfax.pdf">Open the full Carfax report (PDF)</a></p>
+
+    <div class="two">
+      <div>
+        <div class="callout">
+          <h3>The 2014 accident</h3>
+          <p>Carfax shows one accident, reported on January 28, 2014, when the car was less than a year old and had between 5,879 and 7,319 miles. It involved another vehicle, with damage noted to the left rear, rear and right rear. The airbags did not deploy. Carfax reports no structural damage, no total loss and no title brand.</p>
+          <p>The seller reports that the damage was repaired and that no visible evidence of it remains. The accident and repair were also covered in the car's earlier <a class="inline-link" href="https://bringatrailer.com/listing/2013-porsche-cayenne-turbo-26/">Bring a Trailer listing</a>. The rear of the car as it sits today:</p>
+          <div class="strip">
+            <a href="f/105.jpg" data-n="105"><img src="t/105.jpg" width="520" height="347" loading="lazy" alt="Rear"></a>
+            <a href="f/014.jpg" data-n="14"><img src="t/014.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+            <a href="f/102.jpg" data-n="102"><img src="t/102.jpg" width="520" height="347" loading="lazy" alt="Rear three-quarter"></a>
+            <a href="f/026.jpg" data-n="26"><img src="t/026.jpg" width="520" height="347" loading="lazy" alt="Rear quarter and wheel"></a>
+            <a href="f/161.jpg" data-n="161"><img src="t/161.jpg" width="520" height="347" loading="lazy" alt="Reflection across the rear quarter and fuel door"></a>
+          </div>
+        </div>
+        <div class="callout calm">
+          <h3>New windshield</h3>
+          <p>The windshield has been replaced and is new. The glass is stamped Fuyao, acoustic solar tint. <a class="inline-link" href="f/096.jpg" data-n="96">See the stamp</a>.</p>
+        </div>
+      </div>
+      <div>
+        <h3>Where it has lived</h3>
+        <ol class="path">
+          <li><span class="when">2013 to 2025</span><div><b>St. Louis area, Missouri</b><span>Owners 1 to 4 on Carfax. The first two were lease registrations in 2013. Dealer serviced at Audi Exchange Kirkwood, then Porsche St. Louis.</span></div></li>
+          <li><span class="when">2025 to 2026</span><div><b>Central Texas</b><span>Owner 5, about nine months and 12,000 miles, serviced in Austin.</span></div></li>
+          <li><span class="when">Mid 2026</span><div><b>Dealer inventory</b><span>Titled by a dealer in Montana in June and listed for sale in Indiana in August.</span></div></li>
+          <li><span class="when">Aug 2026 on</span><div><b>Aiken, South Carolina</b><span>Owner 6, the current owner. Registered in Aiken in September 2026.</span></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="service" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><h2>Service</h2><span class="tag">From 30 Carfax service records</span></div>
+    <ul class="svc">
+      <li><div class="meta"><b>Nov 2025 and Jan 2026</b>Casis Village Shell, Austin, TX</div><p>Oil and filter changed at each visit.</p></li>
+      <li><div class="meta"><b>Oct 2025 &middot; 71,070 mi</b>Hill Country European Autoworks, Austin, TX</div><p>Front brake pads and rotors replaced, brake pad sensors replaced, wheel bearing service, new fuel filler cap, safety inspection.</p></li>
+      <li><div class="meta"><b>Jun 2025 &middot; 68,414 mi</b>Porsche St. Louis</div><p>Battery replaced, oil and filter changed. Passed Missouri safety and emissions inspections.</p></li>
+      <li><div class="meta"><b>Jan 2021 &middot; 61,760 mi</b>Porsche St. Louis</div><p>Spark plugs replaced, oil and filter changed, brake fluid flushed.</p></li>
+      <li><div class="meta"><b>Nov 2019 &middot; 57,092 mi</b>Porsche St. Louis</div><p>Water pump and gasket, thermostat and housing, and serpentine belt replaced. Coolant flushed. Four tires replaced.</p></li>
+      <li><div class="meta"><b>Oct 2018 &middot; 52,418 mi</b>Porsche St. Louis</div><p>Maintenance inspection, brake fluid flushed.</p></li>
+    </ul>
+    <details class="full">
+      <summary>Full Carfax timeline, 2013 to 2026</summary>
+      <div class="tablewrap">
+        <table class="log">
+          <thead><tr><th scope="col">Date</th><th scope="col">Miles</th><th scope="col">Source</th><th scope="col">Entry</th></tr></thead>
+          <tbody>
+            <tr><td>03/11/2013</td><td></td><td>Maserati Alfa Romeo Louisville, KY</td><td>Pre-delivery inspection completed</td></tr>
+            <tr><td>03/29/2013</td><td>2</td><td>Audi Exchange Kirkwood, St. Louis, MO</td><td>Sold new. Titled in Missouri as a personal lease vehicle</td></tr>
+            <tr><td>04/25/2013</td><td>709</td><td>Audi Exchange Kirkwood</td><td>Serviced; trim checked</td></tr>
+            <tr><td>05/21/2013</td><td>1,195</td><td>Audi Exchange Kirkwood</td><td>Serviced</td></tr>
+            <tr><td>07/08/2013</td><td></td><td>Missouri Motor Vehicle Dept.</td><td>New owner reported. Titled as a lease vehicle</td></tr>
+            <tr><td>07/11/2013</td><td>1,500</td><td>Audi Exchange Kirkwood</td><td>Serviced; trim checked</td></tr>
+            <tr><td>12/06/2013</td><td>5,879</td><td>Audi Exchange Kirkwood</td><td>Four tires mounted and balanced</td></tr>
+            <tr class="flagrow"><td>01/28/2014</td><td></td><td>Damage report</td><td>Accident reported with another motor vehicle. Damage to left rear, rear and right rear. Airbags did not deploy</td></tr>
+            <tr><td>02/18/2014</td><td>7,319</td><td>Audi Exchange Kirkwood</td><td>Oil and filter changed; tire condition and pressure checked; trim checked</td></tr>
+            <tr><td>03/31/2014</td><td>8,502</td><td>Audi Exchange Kirkwood</td><td>Serviced</td></tr>
+            <tr><td>06/25/2014</td><td>11,238</td><td>Audi Exchange Kirkwood</td><td>Tire condition and pressure checked</td></tr>
+            <tr><td>10/22/2014</td><td>14,920</td><td>Audi Exchange Kirkwood</td><td>Tires mounted and balanced</td></tr>
+            <tr><td>11/06/2014</td><td>15,290</td><td>Audi Exchange Kirkwood</td><td>Radio and sound system checked</td></tr>
+            <tr><td>03/05/2015</td><td>18,044</td><td>Audi Exchange Kirkwood</td><td>20,000-mile service performed. Failed emissions inspection recorded the same day</td></tr>
+            <tr><td>03/10/2015</td><td>18,200</td><td>Missouri inspection station</td><td>Passed emissions inspection</td></tr>
+            <tr><td>04/17/2015</td><td>18,665</td><td>Audi Exchange Kirkwood</td><td>Engine checked; engine and powertrain computer checked</td></tr>
+            <tr><td>06/20/2015</td><td>20,508</td><td>Porsche St. Louis</td><td>Tire(s) replaced</td></tr>
+            <tr><td>08/25/2015</td><td>21,500</td><td>Missouri inspection station</td><td>Passed emissions inspection</td></tr>
+            <tr><td>08/26/2015</td><td></td><td>Porsche St. Louis</td><td>Recommended maintenance performed; emissions or safety inspection performed</td></tr>
+            <tr><td>09/26/2015</td><td>22,824</td><td>Porsche St. Louis</td><td>Sold. New owner reported, personal vehicle</td></tr>
+            <tr><td>01/05/2016</td><td>31,404</td><td>OilTime, Festus, MO</td><td>Oil and filter changed</td></tr>
+            <tr><td>05/27/2016</td><td>41,295</td><td>Porsche St. Louis</td><td>Recommended maintenance performed; body electrical system checked</td></tr>
+            <tr><td>06/28/2016</td><td>42,159</td><td>Missouri inspection station</td><td>Passed emissions inspection</td></tr>
+            <tr><td>06/29/2016</td><td></td><td>Porsche St. Louis</td><td>Recommended maintenance performed; four-wheel alignment; brakes, tires and wheels checked</td></tr>
+            <tr><td>09/15/2016</td><td>42,431</td><td>Missouri</td><td>Passed emissions inspection. Purchase reported</td></tr>
+            <tr><td>01/05/2017</td><td>43,839</td><td>Porsche St. Louis</td><td>Body electrical system checked</td></tr>
+            <tr><td>03/17/2017</td><td>45,150</td><td>Missouri inspection station</td><td>Failed emissions inspection</td></tr>
+            <tr><td>03/31/2017</td><td>45,253</td><td>Missouri inspection station</td><td>Passed emissions inspection</td></tr>
+            <tr><td>04/05/2017</td><td>45,259</td><td>Porsche St. Louis</td><td>Body electrical system and drivability checked; tires and wheels checked; wheel(s) repaired</td></tr>
+            <tr><td>04/14/2017</td><td></td><td>Missouri Motor Vehicle Dept.</td><td>New owner reported</td></tr>
+            <tr><td>12/08/2017</td><td>48,704</td><td>Porsche St. Louis</td><td>Body electrical system checked; clock replaced; drivability checked</td></tr>
+            <tr><td>12/19/2017</td><td></td><td>Porsche St. Louis</td><td>Body electrical system checked</td></tr>
+            <tr><td>10/29/2018</td><td>52,418</td><td>Porsche St. Louis</td><td>Maintenance inspection completed; brake fluid flushed; power steering checked</td></tr>
+            <tr><td>07/25/2019</td><td>55,821</td><td>Schicker Ford of St. Louis</td><td>Maintenance inspection completed; brakes checked; safety inspection performed. Passed emissions inspection</td></tr>
+            <tr><td>11/27/2019</td><td>57,092</td><td>Porsche St. Louis</td><td>Water pump and gasket replaced; thermostat and housing replaced; serpentine belt replaced; coolant flushed; four tires replaced; engine and power steering checked</td></tr>
+            <tr><td>01/29/2021</td><td>61,760</td><td>Porsche St. Louis</td><td>Spark plugs replaced; oil and filter changed; brake fluid flushed; body electrical system, drivability and power steering checked</td></tr>
+            <tr><td>04/02/2021</td><td>62,257</td><td>Telle Tire &amp; Auto Service, St. Louis</td><td>Emissions and safety inspection. Passed emissions inspection</td></tr>
+            <tr><td>02/28/2023</td><td>66,005</td><td>Missouri inspection station</td><td>Safety inspection performed. Passed emissions inspection</td></tr>
+            <tr><td>06/13/2025</td><td>68,414</td><td>Porsche St. Louis</td><td>Battery replaced; oil and filter changed. Passed safety and emissions inspections</td></tr>
+            <tr><td>07/02/2025</td><td>68,548</td><td>Online listing</td><td>Offered for sale</td></tr>
+            <tr><td>07/16/2025</td><td></td><td>Auto auction</td><td>Sold</td></tr>
+            <tr><td>09/10/2025</td><td>69,000</td><td>Texas Motor Vehicle Dept., Wimberley</td><td>Title issued. New owner reported</td></tr>
+            <tr><td>10/10/2025</td><td>71,070</td><td>Hill Country European Autoworks, Austin, TX</td><td>Front brake pads and rotors replaced; brake pad sensors replaced; wheel bearing(s) serviced; fuel filler cap replaced; safety inspection performed</td></tr>
+            <tr><td>11/12/2025</td><td></td><td>Casis Village Shell, Austin, TX</td><td>Oil and filter changed</td></tr>
+            <tr><td>01/15/2026</td><td></td><td>Casis Village Shell, Austin, TX</td><td>Oil and filter changed</td></tr>
+            <tr><td>06/18/2026</td><td>81,127</td><td>Montana Motor Vehicle Dept., Helena</td><td>Dealer took title while the vehicle was in inventory</td></tr>
+            <tr><td>08/11/2026</td><td>81,155</td><td>Picasso Imports, Fishers, IN</td><td>Offered for sale</td></tr>
+            <tr><td>08/15/2026</td><td></td><td>South Carolina Motor Vehicle Dept.</td><td>Purchase reported</td></tr>
+            <tr><td>09/11/2026</td><td>81,163</td><td>South Carolina Motor Vehicle Dept., Aiken</td><td>Registered. Title issued to the new owner on 09/13/2026</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="condition" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><h2>Condition</h2><span class="tag">Known flaws, shown up close</span></div>
+    <div class="flaws">
+      <figure><a href="f/155.jpg" data-n="155"><img src="t/155.jpg" width="520" height="347" loading="lazy" alt="Small ding with a paint chip on a lower body crease"></a><figcaption>A small ding with a paint chip on a lower body crease.</figcaption></figure>
+      <figure><a href="f/156.jpg" data-n="156"><img src="t/156.jpg" width="520" height="347" loading="lazy" alt="Light surface scratches on a rear door"></a><figcaption>Light surface scratches on the rear door, visible in direct sun.</figcaption></figure>
+    </div>
+    <ul class="notes">
+      <li>One accident on the Carfax from January 2014, repaired. Details are under <a class="inline-link" href="#history">History</a>.</li>
+      <li>The tires are Pirellis with 2019 date codes, fitted in November 2019. Tread depth readings for all four are in the wheel photos.</li>
+      <li>Light surface rust is visible on a few steel edges underneath. See the Underside photos.</li>
+      <li>The factory warranty has expired.</li>
+    </ul>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="earlier">
+      <div>
+        <h3>Previously on Bring a Trailer</h3>
+        <p>This Cayenne Turbo sold on Bring a Trailer in 2025. That listing has its own photo set, the previous seller's description and the full comment thread.</p>
+      </div>
+      <a class="ghost" href="https://bringatrailer.com/listing/2013-porsche-cayenne-turbo-26/">Open the earlier listing</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <span class="tag">Asking $27,000 &middot; Aiken, South Carolina</span>
+        <div><a class="bignum" href="tel:+18282734080">(828) 273-4080</a></div>
+        <p class="lede">Call or text Will with questions or to arrange a time to see the car. Will represents the vehicle on the seller's behalf.</p>
+        <div class="contact-actions">
+          <a class="btn" href="sms:+18282734080">Text Will</a>
+          <button class="copy" type="button" data-copy="828-273-4080">Copy number</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Vehicle history is summarized from the Carfax report dated October 20, 2026. Build data is from VIN Analytics. Performance figures are Porsche's published numbers for the 2013 Cayenne Turbo. Condition notes come from the seller. Buyers should inspect the car and verify details to their own satisfaction.</p>
+  </div>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <div class="lb-bar"><span id="lb-count"></span><button class="lb-x" id="lb-x" type="button">Close</button></div>
+  <button class="lb-nav" id="lb-prev" type="button" aria-label="Previous photo">&lsaquo;</button>
+  <div class="lb-stage"><img id="lb-img" alt=""></div>
+  <button class="lb-nav" id="lb-next" type="button" aria-label="Next photo">&rsaquo;</button>
+  <p class="lb-cap" id="lb-cap"></p>
+</div>
+
+<script>
+(function(){
+  var P = [[10,"Front three-quarter","Exterior"],[9,"Front three-quarter","Exterior"],[109,"Front three-quarter","Exterior"],[108,"Front three-quarter","Exterior"],[5,"Front three-quarter","Exterior"],[4,"Front three-quarter","Exterior"],[3,"Front three-quarter","Exterior"],[8,"Front three-quarter","Exterior"],[6,"Front","Exterior"],[7,"Front","Exterior"],[110,"Front","Exterior"],[113,"Front","Exterior"],[117,"Front, low angle","Exterior"],[114,"Front three-quarter from above","Exterior"],[111,"Front three-quarter from above","Exterior"],[112,"Front three-quarter from above","Exterior"],[1,"Profile","Exterior"],[2,"Profile","Exterior"],[21,"Profile","Exterior"],[22,"Profile","Exterior"],[100,"Profile","Exterior"],[104,"Profile","Exterior"],[107,"Profile","Exterior"],[11,"Profile","Exterior"],[12,"Profile","Exterior"],[14,"Rear three-quarter","Exterior"],[13,"Rear three-quarter","Exterior"],[18,"Rear three-quarter","Exterior"],[19,"Rear three-quarter","Exterior"],[20,"Rear three-quarter","Exterior"],[102,"Rear three-quarter","Exterior"],[103,"Rear three-quarter","Exterior"],[101,"Rear three-quarter","Exterior"],[106,"Rear three-quarter","Exterior"],[120,"Rear three-quarter","Exterior"],[121,"Rear three-quarter","Exterior"],[15,"Rear","Exterior"],[16,"Rear","Exterior"],[17,"Rear","Exterior"],[105,"Rear","Exterior"],[122,"Rear","Exterior"],[57,"Doors, hood and liftgate open","Exterior"],[58,"Doors, hood and liftgate open","Exterior"],[59,"Doors, hood and liftgate open","Exterior"],[60,"Doors, hood and liftgate open","Exterior"],[61,"Doors, hood and liftgate open","Exterior"],[69,"Doors and liftgate open","Exterior"],[70,"Doors and liftgate open","Exterior"],[23,"Front wheel and fender","Exterior details"],[24,"Front wheel and fender","Exterior details"],[31,"Front fender and door","Exterior details"],[32,"Front corner and headlight","Exterior details"],[33,"Front corner and headlight","Exterior details"],[43,"Headlight","Exterior details"],[44,"Headlight","Exterior details"],[115,"Front grille and intakes","Exterior details"],[116,"Adaptive cruise control radar in the center of the grille","Exterior details"],[34,"Hood crest","Exterior details"],[118,"Hood crest","Exterior details"],[119,"Hood crest","Exterior details"],[25,"Rear quarter and wheel","Exterior details"],[26,"Rear quarter and wheel","Exterior details"],[30,"Rear quarter and wheel","Exterior details"],[29,"Rear quarter","Exterior details"],[27,"Rear corner","Exterior details"],[28,"Rear, close","Exterior details"],[37,"Roof spoiler","Exterior details"],[125,"Rear wiper and spoiler","Exterior details"],[123,"Taillight","Exterior details"],[124,"Taillight","Exterior details"],[54,"Liftgate lettering","Exterior details"],[162,"Liftgate lettering","Exterior details"],[55,"Dual twin-tube tailpipes (option 0P3)","Exterior details"],[56,"Dual twin-tube tailpipes (option 0P3)","Exterior details"],[157,"Door mirror","Exterior details"],[158,"Door mirror","Exterior details"],[159,"Door mirror","Exterior details"],[160,"Door mirror","Exterior details"],[87,"Reflection down the side panels","Exterior details"],[161,"Reflection across the rear quarter and fuel door","Exterior details"],[35,"21-inch 911 Turbo II wheel (option CZ4) and red caliper","Wheels, tires and brakes"],[36,"21-inch 911 Turbo II wheel (option CZ4) and red caliper","Wheels, tires and brakes"],[39,"21-inch 911 Turbo II wheel (option CZ4) and red caliper","Wheels, tires and brakes"],[47,"21-inch 911 Turbo II wheel (option CZ4) and red caliper","Wheels, tires and brakes"],[50,"21-inch 911 Turbo II wheel (option CZ4) and red caliper","Wheels, tires and brakes"],[45,"Brake pad thickness check","Wheels, tires and brakes"],[49,"Brake pad thickness check","Wheels, tires and brakes"],[46,"Brake pad gauge","Wheels, tires and brakes"],[38,"Tread depth gauge on the tire","Wheels, tires and brakes"],[40,"Tread depth gauge on the tire","Wheels, tires and brakes"],[48,"Tread depth gauge on the tire","Wheels, tires and brakes"],[51,"Tread depth gauge on the tire","Wheels, tires and brakes"],[41,"Tire date code 1019: week 10 of 2019","Wheels, tires and brakes"],[42,"Tire date code 1419: week 14 of 2019","Wheels, tires and brakes"],[52,"Tire date code 1319: week 13 of 2019","Wheels, tires and brakes"],[53,"Tire date code 1019: week 10 of 2019","Wheels, tires and brakes"],[64,"4.8-liter twin-turbo V8","Engine bay and diagnostics"],[65,"4.8-liter twin-turbo V8","Engine bay and diagnostics"],[62,"Engine bay","Engine bay and diagnostics"],[63,"Engine bay","Engine bay and diagnostics"],[66,"Engine cover","Engine bay and diagnostics"],[203,"Coolant expansion tank, cap off","Engine bay and diagnostics"],[201,"Scan tool live data: camshaft deviation, Bank 1 at 0 and Bank 2 at -2.625 degrees crank","Engine bay and diagnostics"],[202,"Scan tool live data: fuel high-pressure regulation values","Engine bay and diagnostics"],[209,"Front of the engine and radiator support from below","Underside"],[208,"Front of the engine and subframe from below","Underside"],[207,"Front of the engine from below, under an inspection light","Underside"],[205,"Catalytic converter and engine oil pan","Underside"],[206,"Catalytic converter and heat shields","Underside"],[210,"Transmission oil pan","Underside"],[204,"Steering tie rod and front suspension","Underside"],[215,"Suspension arm and wheel from below","Underside"],[216,"Control arm and red brake caliper","Underside"],[217,"Center of the underbody","Underside"],[218,"Driveshaft and rear differential","Underside"],[219,"Rear differential","Underside"],[220,"Rear differential, close up","Underside"],[221,"Rear differential and crossmember","Underside"],[214,"Rear differential between the exhaust pipes","Underside"],[213,"Suspension arms and wheel from below","Underside"],[211,"Rear muffler and exhaust tips","Underside"],[212,"Rear muffler and exhaust tips","Underside"],[89,"Front cabin under the panorama roof (option 3FU)","Interior"],[88,"Front cabin","Interior"],[90,"Dashboard and center console","Interior"],[91,"Dashboard and center console","Interior"],[83,"Driver's seat and steering wheel","Interior"],[149,"Steering wheel","Interior"],[150,"Steering wheel","Interior"],[138,"Instrument cluster showing 81,751 miles","Interior"],[139,"Instrument cluster showing 81,751 miles","Interior"],[126,"Dashboard from the passenger side","Interior"],[132,"Gear selector and walnut trim (option PH4)","Interior"],[136,"Gear selector and walnut trim (option PH4)","Interior"],[137,"Gear selector and walnut trim (option PH4)","Interior"],[133,"Leather-covered dashboard","Interior"],[134,"Leather-covered dashboard","Interior"],[135,"Dash-top clock","Interior"],[145,"Leather-covered dashboard","Interior"],[144,"Walnut trim","Interior"],[140,"Overhead console","Interior"],[78,"Front door open","Interior"],[71,"Front door open","Interior"],[76,"Door panel","Interior"],[75,"Door panel","Interior"],[74,"Door panel","Interior"],[80,"Window switches","Interior"],[81,"Burmester speaker grille (option 9VJ)","Interior"],[86,"Burmester speaker grille (option 9VJ)","Interior"],[82,"Door sill plate","Interior"],[84,"Front seat and sill","Interior"],[94,"Front seat and sill","Interior"],[95,"Front seat and sill","Interior"],[127,"Front seat and sill","Interior"],[141,"Power seat controls (option Q2J)","Interior"],[131,"Front seats","Interior"],[130,"Front seats","Interior"],[151,"Front seats","Interior"],[129,"Rear seats","Interior"],[85,"Rear seats","Interior"],[72,"Rear seats","Interior"],[77,"Interior","Interior"],[146,"Rear seats","Interior"],[147,"Rear seats","Interior"],[153,"Rear seats","Interior"],[128,"Rear climate and seat heating controls","Interior"],[154,"Rear climate and seat heating controls","Interior"],[152,"Door panel","Interior"],[142,"Door panel","Interior"],[148,"Door panel","Interior"],[143,"Door handle and trim","Interior"],[92,"Door handle and trim","Interior"],[93,"Door handle and trim","Interior"],[163,"Overhead reading light","Interior"],[164,"Overhead reading light","Interior"],[73,"Cargo area","Interior"],[79,"Door jamb plate, built 02/13, with a Clear Auto Bra installer sticker","Labels and glass"],[67,"VIN and engine number label under the hood","Labels and glass"],[68,"VIN at the base of the windshield","Labels and glass"],[96,"Replacement windshield stamp: Fuyao, acoustic solar tint","Labels and glass"],[97,"Replacement windshield stamp: Fuyao, acoustic solar tint","Labels and glass"],[98,"Side glass stamp: Saint-Gobain Sekurit","Labels and glass"],[99,"Side glass stamp: Saint-Gobain Sekurit","Labels and glass"],[155,"Small ding with a paint chip on a lower body crease","Condition"],[156,"Light surface scratches on the rear door","Condition"]];
+  var idx = {}; P.forEach(function(p,i){ idx[p[0]] = i; });
+  var lb = document.getElementById('lb'), img = document.getElementById('lb-img'),
+      cap = document.getElementById('lb-cap'), count = document.getElementById('lb-count'),
+      cur = 0, opener = null;
+  function pad(n){ return ('00'+n).slice(-3); }
+  function show(i){
+    cur = (i + P.length) % P.length;
+    var p = P[cur];
+    img.src = 'f/' + pad(p[0]) + '.jpg';
+    img.alt = p[2] + ': ' + p[1];
+    cap.innerHTML = '';
+    var b = document.createElement('b'); b.textContent = p[2];
+    cap.appendChild(b); cap.appendChild(document.createTextNode(p[1]));
+    count.textContent = (cur+1) + ' / ' + P.length;
+    [cur+1, cur-1].forEach(function(j){ var q = P[(j+P.length)%P.length]; new Image().src = 'f/' + pad(q[0]) + '.jpg'; });
+  }
+  function open(i, from){ opener = from || null; lb.hidden = false; document.documentElement.classList.add('lb-open'); show(i); document.getElementById('lb-x').focus(); }
+  function close(){ lb.hidden = true; document.documentElement.classList.remove('lb-open'); img.removeAttribute('src'); if(opener && opener.focus) opener.focus(); }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('a[data-n]') : null;
+    if(!a) return;
+    var i = idx[+a.getAttribute('data-n')];
+    if(i === undefined) return;
+    e.preventDefault(); open(i, a);
+  });
+  document.getElementById('lb-x').addEventListener('click', close);
+  document.getElementById('lb-prev').addEventListener('click', function(){ show(cur-1); });
+  document.getElementById('lb-next').addEventListener('click', function(){ show(cur+1); });
+  lb.addEventListener('click', function(e){ if(e.target === lb || e.target.classList.contains('lb-stage')) close(); });
+  document.addEventListener('keydown', function(e){
+    if(lb.hidden) return;
+    if(e.key === 'Escape') close();
+    else if(e.key === 'ArrowLeft') show(cur-1);
+    else if(e.key === 'ArrowRight') show(cur+1);
+  });
+  var sx = null;
+  lb.addEventListener('touchstart', function(e){ sx = e.changedTouches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', function(e){
+    if(sx === null) return;
+    var dx = e.changedTouches[0].clientX - sx; sx = null;
+    if(Math.abs(dx) > 45) show(cur + (dx < 0 ? 1 : -1));
+  }, {passive:true});
+
+  var player = document.getElementById('player');
+  if (player && player.querySelector('.facade')) {
+    var vt = document.getElementById('vid-title'), vl = document.getElementById('vid-len'),
+        vd = document.getElementById('vid-desc'), vy = document.getElementById('vid-yt'),
+        cards = document.querySelectorAll('.vcard');
+    var curId = player.querySelector('.facade').getAttribute('data-id');
+    function embed(id, title){
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&playsinline=1';
+      f.title = title;
+      f.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture; fullscreen');
+      f.setAttribute('allowfullscreen', '');
+      player.innerHTML = ''; player.appendChild(f);
+    }
+    player.querySelector('.facade').addEventListener('click', function(){ embed(curId, vt.textContent); });
+    Array.prototype.forEach.call(cards, function(c){
+      c.addEventListener('click', function(){
+        curId = c.getAttribute('data-id');
+        vt.textContent = c.getAttribute('data-title');
+        vl.textContent = c.getAttribute('data-len');
+        vd.textContent = c.getAttribute('data-desc');
+        vy.href = 'https://youtu.be/' + curId;
+        Array.prototype.forEach.call(cards, function(o){ o.classList.toggle('on', o === c); o.setAttribute('aria-pressed', o === c ? 'true' : 'false'); });
+        embed(curId, c.getAttribute('data-title'));
+        var r = player.getBoundingClientRect();
+        if (r.top < 60 || r.bottom > window.innerHeight) player.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center'});
+      });
+    });
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('.showall'), function(btn){
+    btn.addEventListener('click', function(){
+      var grid = document.getElementById(btn.getAttribute('aria-controls'));
+      var openNow = grid.classList.toggle('open');
+      btn.setAttribute('aria-expanded', openNow ? 'true' : 'false');
+      btn.textContent = openNow ? btn.getAttribute('data-less') : btn.getAttribute('data-more');
+    });
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll('.copy'), function(btn){
+    var label = btn.textContent;
+    btn.addEventListener('click', function(){
+      var done = function(t){ btn.textContent = t; setTimeout(function(){ btn.textContent = label; }, 2200); };
+      try {
+        navigator.clipboard.writeText(btn.getAttribute('data-copy')).then(function(){ done('Copied'); }, function(){ done('828-273-4080'); });
+      } catch(err){ done('828-273-4080'); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
